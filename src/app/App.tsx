@@ -1,5 +1,6 @@
 ﻿import { AppRoutes } from "./routes";
 import Header from "./components/Header";
+import { Footer } from "./AboutView";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
     >
       <Header />
       <AppRoutes />
+      <Footer/>
     </div>
   );
 }

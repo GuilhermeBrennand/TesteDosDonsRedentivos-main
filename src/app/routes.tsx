@@ -8,6 +8,7 @@ import {
   mockAnswersQuestionario1,
   mockAnswersQuestionario2,
 } from "./HomeView";
+import { AboutView } from "./AboutView";
 
 export function AppRoutes() {
   const navigate = useNavigate();
@@ -36,6 +37,10 @@ export function AppRoutes() {
         <Route
           path="/questionario-2/*"
           element={<Questionario2 />}
+        />
+        <Route
+            path="/about"
+            element={<AboutView />}
         />
       </Routes>
     </AnimatePresence>
